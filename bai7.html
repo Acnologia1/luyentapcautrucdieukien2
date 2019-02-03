@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Giải phương trình bậc 2. a.x.x+2.b.x+c =0
+    var a = parseInt(prompt('Nhap a =',0));
+    var b = parseInt(prompt('Nhap b =',0));
+    var c = parseInt(prompt('Nhap c =',0));
+    var D = b*b -4*a*c;
+    var nghiemkep = -b/(2*a);
+    var x1 =(-b+Math.sqrt(D))/(2*a);
+    var x2 =(-b-Math.sqrt(D))/(2*a);
+    if(a!=0){
+        if(D <0){
+            alert('Phuong trinh vo nghiem');
+        }
+        else if(D == 0){
+            alert('phuong trinh co nghiem kep x = '+nghiemkep);
+        }
+        else{
+            alert('Phuong trinh co 2 nghiem x1 = '+x1+',x2 ='+x2);
+        }
+    }
+    else
+    {
+        var t = -b / a;
+        if (a != 0) {
+            if (b == 0) {
+                alert('phương trình vô số nghiệm');
+            } else {
+                alert('phương trình có nghiêm =' + t);
+            }
+        } else {
+            alert('phương trình vô nghiệm');
+        }
+    }/*
+    var f = a+b+c;
+    var g =a-b+c;
+    if(f ==0){
+        alert('phuong trinh co nghiem x1 = 1,x2 ='+c/a);
+    }
+    if(g ==0){
+        alert('phuong trinh co nghiem x1 = -1,x2 ='+-c/a);
+    }
+    */
+</script>
+</body>
+</html>
